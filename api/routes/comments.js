@@ -1,9 +1,6 @@
 const router = require("express").Router();
 const asyncMiddleware = require("../middleware/asyncMiddleware");
-const validateTask = require("../validation/task");
 const commentService = require("../service/comments");
-const auth = require("../middleware/auth");
-const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 
 router.get(
   "/",
